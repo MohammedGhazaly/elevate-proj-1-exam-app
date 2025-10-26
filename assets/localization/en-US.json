@@ -65,5 +65,25 @@
         "email_required": "Please enter your email",
         "email_invalid": "Please enter a valid email address",
         "username_required": "Please enter your username"
+    },
+   "signup":{
+        "sign_up":"Sign Up",
+        "user_name":"User name",
+        "enter_you_user_name":"Enter your user name",
+        "first_name":"First Name",
+        "enter_first_name":"Enter First Name",
+        "last_name":"Last Name",
+        "enter_last_name":"Enter Last Name",
+        "email":"Email",
+        "enter_email":"Enter Email",
+        "password":"Password",
+        "enter_password":"Enter Password",
+        "confirm_password":"Confirm Password",
+        "phone":"Phone",
+        "enter_phone_number":"Enter Phone Number",
+        "already_have_an_account":"Already have an account?",
+        "login":"Login"
+
+
     }
 }
