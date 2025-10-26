@@ -1,9 +1,11 @@
 import 'package:exam_app/core/theme/app_colors.dart';
+import 'package:exam_app/core/theme/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const CustomAppBar({super.key});
+  final String title;
+  const CustomAppBar({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +14,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       leadingWidth: 40.w,
       titleSpacing: 0,
-      title: Text("Sign up"),
+      title: Text(
+        title,
+        style: Styles.medium(context, 20),
+      ),
       leading: canPop
           ? InkWell(
               onTap: () {
