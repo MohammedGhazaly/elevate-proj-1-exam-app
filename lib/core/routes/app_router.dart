@@ -11,7 +11,8 @@ final GoRouter router = GoRouter(
   navigatorKey: navigatorKey,
   routes: [
     _customAnimatedGoRoute(
-      route: Routes.home,
+      //ensure to change this to login route not home
+      route: Routes.login,
       page: (state, context) =>
           LoginPage(key: ValueKey(context.locale.languageCode.toString())),
     ),

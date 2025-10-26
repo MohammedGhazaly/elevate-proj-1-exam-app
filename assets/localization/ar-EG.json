@@ -90,5 +90,19 @@
         "continue": "متابعة",
         "no_internet": "لا يوجد اتصال بالإنترنت!",
         "check_internet": "تحقق من اتصالك بالإنترنت وحاول مرة أخرى."
-    }
+    },
+    
+   "login": {
+    "log_in": "تسجيل الدخول",
+    "email_hint": "أدخل بريدك الإلكتروني",
+    "email_label": "البريد الإلكتروني",
+    "password_label": "كلمة المرور",
+    "password_hint": "أدخل كلمة المرور",
+    "remember_me": "تذكرني",
+    "forgot_password": "نسيت كلمة المرور؟",
+    "log_in_button": "تسجيل الدخول",
+    "no_account": "ليس لديك حساب؟ ",
+    "sign_up": "إنشاء حساب"
+}
+
 }
