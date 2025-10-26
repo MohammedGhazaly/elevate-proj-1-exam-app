@@ -24,7 +24,7 @@ class CustomTextFormField extends StatelessWidget {
     this.prefixWidget,
     this.suffixWidget,
     this.textStyle,
-    this.enableFill = true,
+    this.enableFill = false,
     this.fillColor,
     this.title,
     this.isObscureText = false,
@@ -165,8 +165,8 @@ class CustomTextFormField extends StatelessWidget {
                 REdgeInsetsDirectional.only(
                   start: 12,
                   end: 12,
-                  bottom: 10,
-                  top: 10,
+                  bottom: 16,
+                  top: 16,
                 ),
             alignLabelWithHint: true,
             errorStyle: Styles.regular(
@@ -219,10 +219,10 @@ OutlineInputBorder customOutLineBorders({
   double? borderWidth,
 }) {
   return OutlineInputBorder(
-    borderRadius: BorderRadius.circular(borderRadius ?? 12),
+    borderRadius: BorderRadius.circular(borderRadius ?? 4),
     borderSide: BorderSide(
-      color: borderColor ?? AppColors.grayCF,
-      width: borderWidth ?? 0.5,
+      color: borderColor ?? AppColors.gray02,
+      width: borderWidth ?? 1,
     ),
   );
 }
