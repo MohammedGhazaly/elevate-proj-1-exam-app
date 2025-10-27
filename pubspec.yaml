@@ -45,6 +45,7 @@ dependencies:
   injectable: ^2.5.2
   json_annotation: ^4.9.0
   logger: ^2.6.2
+  lottie: ^3.1.2
   pinput: ^5.0.2
   pretty_dio_logger: ^1.4.0
   retrofit: ^4.7.3
@@ -65,7 +66,7 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/json/
-    # - assets/animations/
+    - assets/animations/
     - assets/localization/ar-EG.json
     - assets/localization/en-US.json
   fonts:
@@ -94,21 +95,21 @@ flutter:
         - asset: assets/fonts/arabic/Roboto-Bold.ttf
           weight: 700
 #!=======================ANIMATIONS========================
-# flutter_assets:
-#   assets_path: assets/animations
-#   output_path: lib/core/theme
-#   filename: app_animations.dart
-#   ignore_comments: true
-#   field_prefix: null
-#   classname: AppAnimations
-#!=======================ICONS========================
 flutter_assets:
-  assets_path: assets/icons
+  assets_path: assets/animations
   output_path: lib/core/theme
-  filename: app_icons.dart
+  filename: app_animations.dart
   ignore_comments: true
   field_prefix: null
-  classname: AppIcons
+  classname: AppAnimations
+#!=======================ICONS========================
+# flutter_assets:
+#   assets_path: assets/icons
+#   output_path: lib/core/theme
+#   filename: app_icons.dart
+#   ignore_comments: true
+#   field_prefix: null
+#   classname: AppIcons
 #!=======================IMAGES========================
 # flutter_assets:
 #   assets_path: assets/images

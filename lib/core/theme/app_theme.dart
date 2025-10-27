@@ -116,12 +116,12 @@ class AppTheme {
       hintStyle: Styles.regular(
         context,
         14,
-        color: AppColors.onSurfaceLight.withOpacity(0.6),
+        color: AppColors.onSurfaceLight.withValues(alpha: 0.6),
       ),
       labelStyle: Styles.medium(
         context,
         14,
-        color: AppColors.onSurfaceLight.withOpacity(0.8),
+        color: AppColors.onSurfaceLight.withValues(alpha: 0.8),
       ),
       focusColor: AppColors.primaryLight,
       floatingLabelStyle: Styles.semiBold(
@@ -130,12 +130,12 @@ class AppTheme {
         color: AppColors.primaryLight,
       ),
       border: OutlineInputBorder(
-        borderSide: BorderSide(width: 1, color: AppColors.surfaceLight),
+        borderSide: BorderSide(width: 1, color: AppColors.gray53),
         borderRadius: BorderRadius.circular(8.0),
       ),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(8.0),
-        borderSide: BorderSide(color: AppColors.surfaceLight, width: 1.0),
+        borderSide: BorderSide(color: AppColors.gray53, width: 1.0),
       ),
       focusedBorder: OutlineInputBorder(
         borderSide: BorderSide(width: 1, color: AppColors.primaryLight),

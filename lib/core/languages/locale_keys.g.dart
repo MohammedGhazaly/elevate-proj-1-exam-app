@@ -88,6 +88,8 @@ abstract class  LocaleKeys {
   static const global_continue = 'global.continue';
   static const global_no_internet = 'global.no_internet';
   static const global_check_internet = 'global.check_internet';
+  static const global_test_your_knowledge = 'global.test_your_knowledge';
+  static const global_online_exam = 'global.online_exam';
   static const global = 'global';
   static const login_log_in = 'login.log_in';
   static const login_email_hint = 'login.email_hint';

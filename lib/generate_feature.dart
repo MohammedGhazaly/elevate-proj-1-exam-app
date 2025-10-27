@@ -6,7 +6,7 @@ void main(List<String> args) {
     log('Usage: dart generate_feature.dart <feature_name>');
     exit(1);
   }
-  final featureName = args[0].trim();
+  var featureName = args[0].trim();
   final featuresDir = Directory('lib/features');
   if (!featuresDir.existsSync()) {
     featuresDir.createSync(recursive: true);
@@ -105,6 +105,9 @@ void main(List<String> args) {
   final pageFile = File(
     '${baseDir.path}/presentation/view/pages/${featureName}_page.dart',
   );
+  featureName = featureName.contains('_')
+      ? featureName.split('_').map(_capitalize).join()
+      : _capitalize(featureName);
   pageFile.writeAsStringSync('''
 import 'package:flutter/material.dart';
 

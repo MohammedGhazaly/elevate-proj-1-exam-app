@@ -103,6 +103,10 @@
     "log_in_button": "تسجيل الدخول",
     "no_account": "ليس لديك حساب؟ ",
     "sign_up": "إنشاء حساب"
-}
+},
 
-}
+        "check_internet": "تحقق من اتصالك بالإنترنت وحاول مرة أخرى.",
+        "test_your_knowledge": "اختبر معرفتك",
+        "online_exam": "Online Exam"
+    }
+
