@@ -89,6 +89,8 @@
         "delete": "حذف",
         "continue": "متابعة",
         "no_internet": "لا يوجد اتصال بالإنترنت!",
-        "check_internet": "تحقق من اتصالك بالإنترنت وحاول مرة أخرى."
+        "check_internet": "تحقق من اتصالك بالإنترنت وحاول مرة أخرى.",
+        "test_your_knowledge": "اختبر معرفتك",
+        "online_exam": "Online Exam"
     }
 }

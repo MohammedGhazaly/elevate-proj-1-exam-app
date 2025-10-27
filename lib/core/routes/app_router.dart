@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:exam_app/features/login/presentation/view/pages/login_page.dart';
+import 'package:exam_app/features/spalsh/presentation/view/pages/spalsh_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -7,9 +8,18 @@ import 'routes.dart';
 
 final navigatorKey = GlobalKey<NavigatorState>();
 final GoRouter router = GoRouter(
-  initialLocation: Routes.login,
+  initialLocation: Routes.splash,
   navigatorKey: navigatorKey,
   routes: [
+    _customAnimatedGoRoute(
+      route: Routes.splash,
+      page: (state, context) => const SpalshPage(),
+    ),
+    _customAnimatedGoRoute(
+      route: Routes.login,
+      page: (state, context) =>
+          LoginPage(key: ValueKey(context.locale.languageCode.toString())),
+    ),
     _customAnimatedGoRoute(
       route: Routes.home,
       page: (state, context) =>
