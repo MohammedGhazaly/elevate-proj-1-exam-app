@@ -26,10 +26,10 @@ class _RemeberMeAndForgotPasswordRowState
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
-                width: 20.w,
-                height: 20.h,
+                width: 20,
+                height: 20,
                 child: Checkbox(
-                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  materialTapTargetSize: MaterialTapTargetSize.padded,
                   value: isChecked,
                   onChanged: (value) {
                     setState(() {
@@ -38,7 +38,7 @@ class _RemeberMeAndForgotPasswordRowState
                   },
                 ),
               ),
-              SizedBox(width: 8.w),
+              SizedBox(width: 8),
               Text(
                 LocaleKeys.login_remember_me.tr(),
               ),
